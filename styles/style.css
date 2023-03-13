@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+.home__background__image {
+    background-image: url("../img/tlou_wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.container {
+    padding: 75px; 
+   
+}
+
+.nav__cabecalho {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo__kenzie {}
+
+.nav__bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+    height: 16px;
+
+    padding: 40px;
+    color: var(--color-white);
+}
+
+.nav__bar__ul {
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    width: 336px;
+    height: 100px;
+    gap: 100px;
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    
+    
+    
+}
+
+.nav__bar__ul__li {}
+
+.thelastofus__antesdobotao {
+    display: flex;
+   
+}
+
+.episodes {
+    background-image: url("../img/1212581-the-last-of-us\ 1.png");
+    background-repeat: no-repeat;
+    width: 1512px;
+    height: 910px;
+    padding: 75px;
+}
+
+
+
+
+
+
+
+/*    TITULO   DO    MAIN    */
+
+h1 {
+    color: #FFFFFF;
+    font-family: 'Calistoga', cursive;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+.buttom {}
+
+h3 {
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+.paragrafo {
+    padding: 75px 61px 65px 16px;
+}
+
+.footer {
+    width: 1512px;
+    height: 377px;
+}
