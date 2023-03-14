@@ -267,3 +267,35 @@ footer > figure > img {
     width: 140px;
     height: 140px;
 }
+
+.container > section > h2 {
+    color: var(--color-grey);
+    font-family: Iceland;
+    height: 47px;
+    width: 668px;
+    left: 5446px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: left;
+}
+
+.container > section > h3 {
+    color: var(--color-grey);
+    font-family: Iceland;
+    height: 31px;
+    width: 449px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
