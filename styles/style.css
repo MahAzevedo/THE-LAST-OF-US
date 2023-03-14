@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Darker+Grotesque&family=Iceland&display=swap');@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+ /* COFIGURAÇÕES GERAIS */
+
+ .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
 
 .home__background__image {
     background-image: url("../img/tlou_wallpaper.png");
@@ -9,105 +23,247 @@
 
 .container { 
    width: 80vh;
-   margin: 0 auto;
    height: 100%;
+   margin: 0 auto;
 }
 
-.header__cabecalho {
-    display: flex;
-    align-items: center;
+/* .header__cabecalho {
+    passou pra class flex
+    mas o conteudo 
+    ficaria aqui
+}  
+*/
+
+/* header > figure > img é ainda mais especifico, e escreve com essa seta > nesse sentido indicando que ta indo */
+/* figure pai(>) imagem */
+figure > img { 
+    width: 254px;
+    height: 144px;
 }
 
-
-
-
-
-/*
-.header__cabecalho {
-    display: flex;
-    align-items: center;
+/* nav tem 70%, mais a img, mais os espacos, totalizando o cabecalho tem 100%. Header é o pai de 100% que vai distribuindo seu tamanho entre os filhos*/
+nav {
+    width: 70%;
 }
 
-.nav__logo__kenzie {}
-
-.nav__bar {
-    width: 100%;
+nav > ul {
+    width: 70%; /* esse tamanho deixou o cabecalho mais junto. se der mais largura ele separa*/
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    
-    height: 16px;
+    justify-content: space-between; 
+}
 
-    padding: 40px;
+ul > li > a {
     color: var(--color-white);
-}
-
-.nav__bar__ul {
-    display: flex;
-    justify-content:center;
-    position: relative; 
-    width: 336px;
-    height: 100px;
-    gap: 100px;
-   
-    font-style: normal;
+    font-family: 'Iceland';
     font-weight: 400;
     font-size: 26px;
-    
-    
-    
+    line-height: 25px;
 }
 
-.nav__bar__ul__li {}
+/* esse hover, assim que o cursor fica sobre a palavra link, e;a fica mais grossa/pesada/peso, é isso*/
+/* ela é a mesma coisa dessa de cima, só que essa só funciona quando setada*/
+ul >li > a:hover {
+    font-weight: 600;
+}
 
-.thelastofus__antesdobotao {
-    display: flex;
-   
+main {
+    width: 80vw;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    gap: 15px /*espacamento interno. nao sei se gostei tanto na imagem*/
+}
+
+h1 {
+    color: var(--color-white);
+    width: 668px;
+    font-family: Iceland;
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 89px;
+    text-align: left;
+}
+
+/* entrei na minha tag main, e acessei o p (paragrafo)*/
+main > p {
+    color: var(--color-white);
+    width: 506px;
+    font-family: Actor;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+button {
+    color: var(--color-white);
+    width: 180px;
+    height: 46px;
+    border-radius: 5px;
+    font-family: Iceland;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    left: 5002px;
+    top: 23px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--color-secondary);
+}
+
+.active:hover {
+    border: 2px solid var(--color-grey);
+}
+
+.inactive {
+    background-color: var(--color-grey);
+}
+
+.inactive {
+    border: 2px solid var(--color-grey);
+}
+
+main > section {
+    margin-top: 100px;
+}
+
+h3 {
+    color: var(--color-white);
+    width: 336px;
+    height: 65px;
+    font-family: Iceland;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+}
+
+section > ul {
+    width: 800px;
+}
+
+section > ul > li {
+    width: 261px;
+    height: 139px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("/img/EP-2.2.png"),
+                      url("..img/billefrank.png"), 
+                      url("/img/Ellie\ &\ Joel\ adventure\ 1.png");
 }
 
 .episodes {
-    background-image: url("../img/1212581-the-last-of-us\ 1.png");
+    background-image: url("/img/1212581-the-last-of-us\ 1.png");
     background-repeat: no-repeat;
-    width: 1512px;
-    height: 910px;
-    padding: 75px;
+    background-size: cover;
+    background-position: top right;
+    height: 900px;
 }
 
-*/
+.container__flex {
+    width: 80vh;
+    height: 100%;
+    margin: 0 auto;
+}
 
-
-
-
-
-/*    TITULO   DO    MAIN    */
 /*
-h1 {
-    color: #FFFFFF;
-    font-family: 'Calistoga', cursive;
-}
-
-p {
-    color: #FFFFFF;
-}
-
-.buttom {}
-
-h3 {
-    color: #FFFFFF;
-}
-
 h2 {
-    color: #FFFFFF;
+   era h3,
+   mudei o titulo pra h2
 }
-
-.paragrafo {
-    padding: 75px 61px 65px 16px;
-}
-
-.footer {
-    width: 1512px;
-    height: 377px;
-}
-
 */
+
+.posts {
+    width: 479px;
+   /* height: 546px; */
+   /* margin-top: 80px; */
+    padding: 5px;
+    text-align: justify;
+}
+
+.posts > p {
+    color: var(--color-white);
+    font-family: Iceland;
+    font-size: 22px; 
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+.episodes__list {
+    width: 671px;
+    height: 762px;
+    margin: 0 auto;
+    overflow: auto; /*para uso com o JS, com ele dá pra criar uma barra de rolagem no JS*/
+}
+
+.card {
+    color: var(--color-white);
+    height: 182px;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+
+/* é com ::-webkit-scrollbarr que se faz uma barra de rolagem */
+.episodes__list::-webkit-scrollbarr {
+    background-color: var(--color-secondary);
+    border: 3px solid var(--color-black);
+    border-radius: 20px;
+}
+
+.card > img {
+    height: 120px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.card__texto {
+    width: 60%;
+    height: 80%;
+    margin: 20px;
+}
+
+.card__texto > h4 {
+    color: var(--color-white);
+    height: 30px;
+    font-family: Darker Grotesque;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+}
+
+.card__texto > p {
+    color: var(--color-white);
+    height: 88px;
+    width: 324px;
+    top: 639px;
+    left: 5690px;
+    font-family: Darker Grotesque;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    border-radius: nullpx;
+    letter-spacing: 0em;
+}
+
+/*FOOTER*/
+
+footer {
+    height: 377px;
+    background: linear-gradient(
+        180deg, #000000 0%, #950202 289.06%);
+}
+
+footer > figure > img {
+    width: 140px;
+    height: 140px;
+}
