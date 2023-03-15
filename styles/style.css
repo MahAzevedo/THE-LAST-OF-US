@@ -153,9 +153,9 @@ section > ul > li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
-    background-image: url("/img/EP-2.2.png"),
-                      url("..img/billefrank.png"), 
-                      url("/img/Ellie\ &\ Joel\ adventure\ 1.png");
+    background-image: url("/img/EP-2.2.png");
+                    /*  url("..img/billefrank.png"), 
+                      url("/img/Ellie\ &\ Joel\ adventure\ 1.png");*/
 }
 
 .episodes {
