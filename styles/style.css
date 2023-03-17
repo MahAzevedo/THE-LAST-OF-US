@@ -22,7 +22,7 @@
     background-position: top right;
 }
 
-.container__home__principal__section { 
+.container__home__section { 
    width: 80vh; 
    margin: 0 auto;
    height: 100%; /*altura fixa por Boas Práticas*/
@@ -52,13 +52,14 @@
 
  /* nav > ul */
 .nav__bar__ul {
-    width: 70%; /*espaco entre os itens do cabecalho*/
+    width: 70%; /*pra em consequência, pegar "apertar" ainda mais o espaco entre os itens da tag pai/cabecalho*/
     display: flex;
     align-items: center;
     justify-content: space-between; /*espaço-entre-item*/
 }
 
-nav > ul > li > a {
+/* nav > ul > li > a */ 
+.nav__bar__ul__a {
     color: var(--color-white);
     font-family: 'Iceland';
     font-weight: 400;
@@ -67,14 +68,21 @@ nav > ul > li > a {
     text-align: left;
 }
 
-/* esse hover, assim que o cursor fica sobre a palavra link, e;a fica mais grossa/pesada/peso, é isso*/
-/* ela é a mesma coisa dessa de cima, só que essa só funciona quando setada*/
-nav > ul >li > a:hover {
-    font-weight: 600;
+/* nav > ul >li > a:hover */
+.nav__bar__ul__a:hover {
+    font-weight: 900;
 }
+/* esse é o hover, assim que o cursor fica sobre a palavra link, e;a fica mais grossa/pesada/peso, é isso*/
+/* ela é a mesma coisa dessa de cima, só que essa só funciona quando setada */
 
-main {
-    width: 80vw;
+/* FINAL DO CABECALHO */
+
+/*------------------------------*/
+
+/* INICIO DA MAIN A PARTIR DO TÍTULO: THE LAST OF US*/
+
+.main__principal {
+    /*width: 80vw;*/
     margin: 0 auto;
     display:flex;
     flex-direction: column;
