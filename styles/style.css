@@ -14,6 +14,7 @@
     gap: 10px;
  }
 
+ /* SECTION DE FUNDO DA HOME */
 .home__background__image {
     background-image: url("../img/tlou_wallpaper.png");
     background-repeat: no-repeat;
@@ -21,36 +22,40 @@
     background-position: top right;
 }
 
-.container { 
-   width: 80vh; /*80*/
-   height: 100%;
+.container__home__principal__section { 
+   width: 80vh; 
    margin: 0 auto;
+   height: 100%; /*altura fixa por Boas Práticas*/
 }
 
-/* .header__cabecalho {
-    passou pra class flex
-    mas o conteudo 
-    ficaria aqui
-}  
-*/
+/* HEADER -  CABECALHO */
+
+/* ? poderia colocar o flex aqui, junto? */
+.container__header__cabecalho .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} /* pode desabilitar essas funcoes, ele ta ligado no flex*/
+
 
 /* header > figure > img é ainda mais especifico, e escreve com essa seta > nesse sentido indicando que ta indo */
 /* figure pai(>) imagem */
-figure > img { 
+.nav__logo__kenzie {  
     width: 254px;
     height: 144px;
 }
 
 /* nav tem 70%, mais a img, mais os espacos, totalizando o cabecalho tem 100%. Header é o pai de 100% que vai distribuindo seu tamanho entre os filhos*/
-nav {
-    width: 70%;
+.nav__bar {
+    width: 70%; /*espaco entre os itens do cabecalho*/
 }
 
-nav > ul {
-    width: 70%; /* esse tamanho deixou o cabecalho mais junto. se der mais largura ele separa*/
+ /* nav > ul */
+.nav__bar__ul {
+    width: 70%; /*espaco entre os itens do cabecalho*/
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between; /*espaço-entre-item*/
 }
 
 nav > ul > li > a {
@@ -59,6 +64,7 @@ nav > ul > li > a {
     font-weight: 400;
     font-size: 26px;
     line-height: 25px;
+    text-align: left;
 }
 
 /* esse hover, assim que o cursor fica sobre a palavra link, e;a fica mais grossa/pesada/peso, é isso*/
@@ -302,7 +308,7 @@ h2 {
     font-size: 32px;
     font-weight: 400;
     line-height: 31px;
-    text-align: left;
+    text-align: center;
 }
 
 /*FOOTER*/
@@ -311,12 +317,19 @@ footer {
     height: 377px;
     background: linear-gradient(
         180deg, #000000 0%, #950202 289.06%);
+   /* background-size: cover; */
 }
 
 footer > figure > img {
     width: 140px;
     height: 140px;
 }
+
+.rodape__flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
 
 .footer__icons {
     display: flex;
@@ -325,3 +338,23 @@ footer > figure > img {
     gap: 20px;
 }
 
+.madjan__footer-paragrafo {
+    color: var(--color-grey);
+    font-family: Iceland;
+    height: 31px;
+    width: 449px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+}
+
+@media screen and (min-width: 2560px) {
+    .home__background__image {
+        background-image: url("../img/tlou_wallpaper.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+    }
+}
