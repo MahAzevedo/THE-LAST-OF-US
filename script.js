@@ -28,12 +28,6 @@ const episodes = [
             "Traveling through Missouri, Joel and Ellie are forced to take a detour through Kansas City, where they are ambushed.",
     },
 
-    {
-        img: "img/tlou_s1_ep4.png",
-        title: "Please Hold to My Hand",
-        description:
-            "Traveling through Missouri, Joel and Ellie are forced to take a detour through Kansas City, where they are ambushed.",
-    },
 ];
 
 const list = document.querySelector(".episodes__list");

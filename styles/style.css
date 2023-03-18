@@ -248,7 +248,7 @@ h3 { /* checar se precisa de class 1/3*/
 }
 
 .container__episodes__list {
-    margin: 6rem 1rem 5rem 6rem; 
+    margin: 6rem 0rem 5rem 3rem;
 }
 
 
@@ -263,7 +263,7 @@ h3 { /* checar se precisa de class 1/3*/
 .card {
     /* color: var(--color-grey); */
     height: 182px;
-    width: 618px;
+    width: 500px;  /*618*/
     display: flex;
     align-items: center;
     margin: 18px;
