@@ -184,7 +184,7 @@ h3 { /* checar se precisa de class 1/3*/
     checar se precisa de class 2/3
 }*/
 
-.tela__1__texto-central {
+.main__section__inside__texto-centro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,12 +194,19 @@ h3 { /* checar se precisa de class 1/3*/
     bottom: -5rem;
 }
 
+/* FINAL DA HOME - PRIMEIRA PÁGINA */
+
+/* ----------------------- */
+
+/*  INICIO DA SEGUNDA PARTE: EPISODES  */
+
 .episodes {
     background-image: url("/img/1212581-the-last-of-us\ 1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
     height: 900px;
+    /* width: 1108px; */
 }
 
 .container__flex {
