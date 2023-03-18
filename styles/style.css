@@ -89,7 +89,7 @@
     gap: 15px /*espacamento interno. nao sei se gostei tanto na imagem*/
 }
 
-h1 {
+h1 { /* não fiz class pq só pode existir um h1 */
     color: var(--color-white);
     width: 668px;
     font-family: Iceland;
@@ -97,10 +97,11 @@ h1 {
     font-weight: 400;
     line-height: 89px;
     text-align: left;
-}
+} 
 
 /* entrei na minha tag main, e acessei o p (paragrafo)*/
-main > p {
+/* main > p */ 
+.main__principal__paragrafo {
     color: var(--color-white);
     width: 506px;
     font-family: Actor;
@@ -126,11 +127,11 @@ button {
     cursor: pointer;
 }
 
-.active {
+.active { /*button ativo/ligado*/
     background-color: var(--color-secondary);
 }
 
-.active:hover {
+.active:hover { /*cria borda mais evidente, ativada pelo botao */
     border: 2px solid var(--color-grey);
 }
 
@@ -142,11 +143,21 @@ button {
     border: 2px solid var(--color-grey);
 }
 
-main > section {
+/* FIM DA MAIN */
+
+/*-----------------------*/
+
+/* INICIO DE SECTION: INSIDE */
+
+/* main > section (ex flex-column) */ 
+.main__section__inside {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-h3 {
+h3 { /* checar se precisa de class 1/3*/
     color: var(--color-white);
     width: 336px;
     height: 65px;
@@ -157,32 +168,31 @@ h3 {
     text-align: left;
 }
 
-section > ul {
-    width: 800px;
+.main__section__inside__div {
+    padding: 4rem 0rem 3rem 0rem;
 }
 
-.tela__1__textocentro {
+/* (ex) section > ul */
+.main__section__inside__ul {
+   /*  width: 800px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* h3 { 
+    checar se precisa de class 2/3
+}*/
+
+.tela__1__texto-central {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
+    color: var(--color-grey);
     font-size: 20px;
     position: relative;
     bottom: -5rem;
 }
-
-/* nao ta funcionando
-section > ul > li {
-    width: 261px;
-    height: 139px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-image: url("/img/EP-2.2.png");
-                    /*  url("..img/billefrank.png"), 
-                      url("/img/Ellie\ &\ Joel\ adventure\ 1.png");
-}
-*/
 
 .episodes {
     background-image: url("/img/1212581-the-last-of-us\ 1.png");
