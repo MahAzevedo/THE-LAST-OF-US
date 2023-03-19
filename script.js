@@ -66,11 +66,6 @@ function renderCard(episodio) {
 
 
 
-
-
-
-
-
 //const nome = "Madi";
 //let idade = 20;
 
@@ -78,7 +73,7 @@ function renderCard(episodio) {
 
 //console.log(nome); 
 
-//nome = "Gustavo"; 
+//nome = "Cadeira"; 
 
 
 //const lastTransactionsValues = [30, 30.5, 20];
@@ -93,4 +88,3 @@ function renderCard(episodio) {
 //} else {
 //   console.log("saldo insuficiente")
 //}
-
